@@ -1,0 +1,29 @@
+ReadMe.txt
+------------------------------------------------------------------------------------------------
+
+1. Create a package 'bliffoscope' and put all the source code into it. Please put image and target
+   files in the same package as that of the source code.
+
+2. Please set the relative path of image file in 'image' parameter in files.properties
+
+3. Please set the relative path of all target files in 'targets' parameter in files.properties.
+   The different target file paths has to be separated by a semi-colon.
+   
+4. If the scanned target from the image has to be printed, set the 'print_target' parameter in
+   files.properties to 'Y'.
+   Irrespective of this option, the coordinates of the target will be printed.
+   
+5. Set the acceptable match percentage for the target in 'match_percentage' parameter in 
+   files.properties. Enter only integers ranging between 1 to 100 (both inclusive).
+
+6. Please run Bliffoscope.java which is compatible to run on Java 1.6 
+
+Assumptions
+-------------------------------------------------------------------------------------------------
+1. Match percentage of 70 has been set in the properties file. A match percent of less than
+   70 will not be considered as a potential target.
+   To change this value, please do so in the properties files. Enter only integers ranging between
+   1 to 100 (both inclusive).
+   
+2. If the target image is bigger than input image, the target will not be looked for. Instead, the
+   number of matching targets will be returned as -1.
